@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa"; // Hamburger and close icons
 import { motion } from "framer-motion"; // Import motion from framer-motion
-import Logo from '/users/jean/portfolio/src/assets/logo-2.svg';
+import Logo from '../assets/logo-2.svg';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +14,9 @@ function Header() {
   return (
     <motion.header
       className="header"
-      initial={{ opacity: 0, y: 20 }} // Initial animation state
-      animate={{ opacity: 1, y: 0 }} // Animate to this state
-      transition={{ duration: 0.9, ease: "easeInOut" }} // Animation settings
+      initial={{ opacity: 0, y: 20 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.9, ease: "easeInOut" }} 
     >
       <div className="header-content">
         {/* Logo on the left */}
