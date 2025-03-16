@@ -1,0 +1,71 @@
+{
+    "projects": [
+      {
+        "image": "/imagens/Crema.jpg",
+        "hoverImage": "./imagens/crema-hover.jpg",
+        "name": "Crema",
+        "category": "Branding",
+        "client": "Crema Clothing",
+        "year": "2024",
+        "description": "Lorem ipsum dolor sit amet",
+        "images": [
+          "/imagens/Crema.jpg",
+          "/imagens/Crema.jpg",
+          "/imagens/Crema.jpg",
+          "/imagens/Crema.jpg",
+          "/imagens/Crema.jpg"
+        ]
+      },
+
+      {
+        "image": "/imagens/Maricatto.jpg",
+        "hoverImage": "./imagens/maricatto-hover.jpg",
+        "name": "Maricatto",
+        "category": "Branding",
+        "client": "Gabriel Maricatto",
+        "year": "2024",
+        "description": "Lorem ipsum dolor sit amet",
+        "images": [
+          "/imagens/Maricatto.jpg",
+          "/imagens/Maricatto.jpg",
+          "/imagens/Maricatto.jpg",
+          "/imagens/Maricatto.jpg",
+          "/imagens/Maricatto.jpg"
+        ]
+      },
+      {
+        "image": "/imagens/IUCA.jpg",
+        "hoverImage": "./imagens/iuca-hover.jpg",
+        "name": "iuca",
+        "category": "Branding",
+        "client": "iuca arquitetura",
+        "year": "2023",
+        "description": "Lorem ipsum dolor sit amet",
+        "images": [
+          "/imagens/IUCA.jpg",
+          "/imagens/IUCA.jpg",
+          "/imagens/IUCA.jpg",
+          "/imagens/IUCA.jpg"
+        ]
+      },
+      {
+        "image": "/imagens/Bambusa.jpg",
+        "hoverImage": "./imagens/bambusa-hover.jpg",
+        "name": "Bambusa",
+        "category": "Branding",
+        "client": "Bambusa",
+        "year": "2023",
+        "description": "Lorem ipsum dolor sit amet",
+        "images": [
+          "/imagens/Bambusa.jpg",
+          "/imagens/Bambusa.jpg",
+          "/imagens/Bambusa.jpg",
+          "/imagens/Bambusa.jpg",
+          "/imagens/Bambusa.jpg"
+        ]
+       }
+    ],
+    "layout": {
+      "columns": 2
+    }
+  }

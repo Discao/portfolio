@@ -1,0 +1,237 @@
+/* Global Styles */
+h1 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 0;
+  color: rgb(189, 189, 189);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 0;
+  color: rgb(189, 189, 189);
+  line-height: 2rem;
+}
+
+.highlight {
+  color: rgb(255, 193, 32);
+}
+
+/* Projects Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between project containers */
+  flex: 1; /* Fill remaining space */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  justify-content: space-between;
+  overflow: visible;
+}
+
+/* Project Container */
+.container {
+  width: calc(50% - 10px); /* Two columns with gap */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Required for absolute positioning of hover image */
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Info */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative; /* Ensure the info container is relative for absolute positioning */
+}
+
+/* Default Image */
+.default-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  transition: opacity 0.5s ease; /* Smooth transition for image change */
+}
+
+/* Hover Image */
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease; /* Smooth transition for image change */
+  z-index: 1; /* Ensure the hover image is above the default image */
+}
+
+.container:hover .hover-image {
+  opacity: 1; /* Show hover image on hover */
+}
+
+.container:hover .default-image {
+  opacity: 0; /* Hide default image on hover */
+}
+
+/* Text Row in Container */
+.text-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  position: relative; /* Ensure text is positioned correctly */
+  z-index: 2; /* Ensure text is above the hover image */
+}
+
+.name {
+  text-align: left;
+  flex: 1;
+}
+
+.category {
+  text-align: right;
+  flex: 1;
+}
+
+/* Project Details Container */
+.project-details-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 120px); /* Adjust height to account for header and footer */
+  padding: 0px;
+}
+
+/* Left Side: Text Information */
+.project-info {
+  width: 100%; /* Fixed width for the text section */
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.project-info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  line-height: 0.5rem;
+}
+
+.project-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Right Side: Scrollable Images */
+.project-images {
+  width: 100%; /* Width for the images section */
+  box-sizing: border-box;
+  overflow-y: auto; /* Allow scrolling for images */
+  transition: all 0.9s ease;
+  border-radius: 0.5rem;
+}
+
+.project-images img {
+  width: 100%;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  /* Mobile: One container per row */
+  .container {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height automatically */
+  }
+
+  img {
+    height: auto; /* Adjust image height automatically */
+  }
+
+  /* Optional: Adjust header for mobile */
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Tablet: Two containers per row */
+  .container {
+    width: calc(50% - 20px);
+    height: 50vh;
+  }
+
+  img {
+    height: calc(50vh - 60px);
+  }
+
+  /* For tablets and larger screens */
+  .project-details-container {
+    flex-direction: row; /* Side-by-side layout */
+  }
+
+  .project-info {
+    width: 30%; /* Fixed width for the text section */
+    position: fixed; /* Lock the text section in place */
+    left: 0;
+    top: 80px; /* Adjust based on header height */
+    bottom: 60px; /* Adjust based on footer height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+
+  .project-images {
+    width: 70%; /* Width for the images section */
+    margin-left: 30%; /* Push images to the right of the text section */
+  }
+}
+
+/* Cascade Animation */
+.cascade-item {
+  opacity: 0; /* Start with elements hidden */
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to all pages */
+.page-enter {
+  animation: fadeIn 0.9s ease-in-out;
+}

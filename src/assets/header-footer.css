@@ -1,0 +1,223 @@
+/* Header Styles */
+.header {
+  width: 100%;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
+  flex-direction: row;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: auto;
+}
+
+/* Hamburger Icon (Mobile Only) */
+.hamburger {
+  display: none; 
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(151, 151, 151);
+  z-index: 1000;
+  margin-left: auto;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-item {
+  color: rgb(151, 151, 151);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  color: rgb(255, 193, 32);
+}
+
+.contrate-button {
+  background: none;
+  border: 2px solid rgb(151, 151, 151);
+  color: rgb(151, 151, 151);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.contrate-button:hover {
+  background-color: rgb(255, 193, 32);
+  color: rgb(30, 30, 30);
+  border: 2px solid rgb(255, 193, 32);
+}
+
+/* Full-screen overlay menu */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95); /* Semi-transparent white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu content */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-content .menu-item {
+  font-size: 1.5rem; /* Larger font size for mobile menu */
+}
+
+.menu-content .contrate-button {
+  font-size: 1.5rem; /* Larger font size for mobile menu */
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .hamburger {
+    display: block; 
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-overlay.active {
+    display: flex; /* Show overlay menu when active */
+  }
+}
+
+.header-content {
+  justify-content: space-between; /* Logo on the left, hamburger on the right */
+  align-items: center; /* Vertically center items */
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.hamburger {
+  margin-left: auto;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; /* Hide hamburger icon on desktop */
+  }
+
+  .menu {
+    display: flex; /* Show default menu on desktop */
+  }
+
+  .menu-overlay {
+    display: none; /* Hide overlay menu on desktop */
+  }
+}
+
+/* Footer Styles */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 0;
+  color: rgb(151, 151, 151);
+  font-size: 1rem;
+}
+
+.instagram-link {
+  text-decoration: none;
+  color: rgb(151, 151, 151);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+  color: rgb(255, 193, 32);
+}
+
+/* Footer */
+.footer {
+  width: 98.5%;
+  row-gap: 20px;
+  padding: 10px;
+  margin-top: 30px;
+  border-top: 1px solid rgb(70, 70, 70); /* Thin grey line */
+  text-align: center;
+}
+
+.footer-content {
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+  margin-bottom: 10px;
+}
+
+.instagram-link {
+  font-size: 1rem;
+  color: rgb(151, 151, 151);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+  color: rgb(255, 193, 32);
+}
+
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between items */
+  }
+
+  .footer-text {
+    order: 1; /* Ensure "Dedo na Quina..." is on top */
+  }
+
+  .instagram-link {
+    order: 2; /* Ensure "Instagram" is at the bottom */
+  }
+}

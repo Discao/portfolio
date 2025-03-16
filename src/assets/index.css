@@ -1,0 +1,23 @@
+h1 {
+font-size: 1rem;
+}
+
+body {
+    background-color: rgb(24,24,24);
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    overflow-x: hidden;
+    cursor: url(https://i.imgur.com/O5NckgO.png)16 16, auto;
+}
+
+a {
+    cursor: url("https://i.imgur.com/pJQe7m7.png")16 16, pointer;
+}
+
+button:hover, a:hover, .botao:hover {
+    cursor: url("https://i.imgur.com/pJQe7m7.png")16 16, pointer;
+}
