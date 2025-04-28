@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { useEffect } from "react";
+import SobreNos from './pages/SobreNos';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project/:projectId" element={<ProjectDetails />} />
+        <Route path="/sobre-nos" element={<SobreNos />} />
       </Routes>
     </Router>
   );

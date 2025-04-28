@@ -1,0 +1,18 @@
+{
+  "team": [
+    {
+      "image": "/imagens/Crema.jpg",
+      "name": "Jean",
+      "role": "Diretor de Arte",
+      "bio": "Lorem ipsum dolor sit amet",
+      "instagram": "@cedemachi"
+    },
+    {
+      "image": "/imagens/Crema.jpg",
+      "name": "Luty",
+      "role": "Diretor de Arte",
+      "bio": "Lorem ipsum dolor sit amet",
+      "instagram": "@chocoluty"
+    }
+  ]
+}

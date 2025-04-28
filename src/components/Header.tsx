@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa"; // Hamburger and close icons
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import { FaBars, FaTimes } from "react-icons/fa";
+import { motion } from "framer-motion";
 import Logo from '../assets/logo-2.svg';
 
 function Header() {
@@ -31,14 +31,22 @@ function Header() {
 
         {/* Default menu for desktop */}
         <div className="menu">
-          <a href="#sobre-nos" className="menu-item">Sobre nós</a>
+          <Link to="/sobre-nos" className="menu-item" onClick={() => setIsMenuOpen(false)}>
+            Sobre nós
+          </Link>
           <button className="contrate-button">Contrate</button>
         </div>
 
         {/* Full-screen overlay menu for mobile */}
         <div className={`menu-overlay ${isMenuOpen ? "active" : ""}`}>
           <div className="menu-content">
-            <a href="#sobre-nos" className="menu-item">Sobre nós</a>
+            <Link 
+              to="/sobre-nos" 
+              className="menu-item" 
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Sobre nós
+            </Link>
             <button className="contrate-button">Contrate</button>
           </div>
         </div>
