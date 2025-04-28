@@ -4,14 +4,16 @@ font-size: 1rem;
 
 body {
     background-color: rgb(24,24,24);
+    padding: 40px;
     color: white;
-    padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     display: flex;
     justify-content: column;
-    align-items: center;
+    flex-direction: column;
     overflow-x: hidden;
     cursor: url(https://i.imgur.com/O5NckgO.png)16 16, auto;
+    min-height: 100vh;
 }
 
 a {

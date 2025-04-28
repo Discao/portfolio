@@ -34,7 +34,9 @@ function Header() {
           <Link to="/sobre-nos" className="menu-item" onClick={() => setIsMenuOpen(false)}>
             Sobre nós
           </Link>
+          <a href="https://wa.me/5544999992989" target="blank" rel="noopener noreferrer">
           <button className="contrate-button">Contrate</button>
+          </a>
         </div>
 
         {/* Full-screen overlay menu for mobile */}

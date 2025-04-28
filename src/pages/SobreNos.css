@@ -1,12 +1,14 @@
 /* Main Container - matches your body styling */
 .sobre-nos-container {
+    display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
   
   /* Title */
@@ -29,7 +31,6 @@
   
   /* Team Member Card */
   .team-member {
-    background: rgb(40, 40, 40);
     border-radius: 12px;
     overflow: hidden;
     width: calc(50% - 20px); /* Accounts for gap */
@@ -45,12 +46,12 @@
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
-    border-radius: 12px 12px 0 0;
   }
   
   .member-image {
     width: 100%;
     height: 100%;
+    border-radius: 6px;
     object-fit: cover;
     transition: transform 0.3s ease;
   }
@@ -90,7 +91,7 @@
   
   .member-social {
     display: inline-block;
-    color: #E1306C; /* Instagram color */
+    color:rgb(255, 193, 32);
     text-decoration: none;
     font-weight: 500;
     margin-top: auto;
@@ -98,7 +99,7 @@
   }
   
   .member-social:hover {
-    color: #C13584;
+    color: rgb(255, 193, 32);
     text-decoration: underline;
   }
   
