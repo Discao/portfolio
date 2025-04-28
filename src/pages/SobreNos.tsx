@@ -3,15 +3,14 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { useEffect } from "react";
-import "./SobreNos.css"
-
+import "./SobreNos.css";
 
 const SobreNos = () => {
   const [scope, animate] = useAnimate();
 
   useEffect(() => {
     animate(
-      ".cascade-item",
+      ".team-member",
       { opacity: 1, y: 0 },
       { delay: stagger(0.1), duration: 0.5, ease: "easeInOut" }
     );
@@ -25,7 +24,7 @@ const SobreNos = () => {
         <div className="team-grid">
           {teamData.team.map((member, index) => (
             <motion.div
-              className="team-member cascade-item"
+              className="team-member"
               initial={{ opacity: 0, y: 20 }}
               key={`member-${index}`}
             >
@@ -37,17 +36,19 @@ const SobreNos = () => {
                   loading="lazy"
                 />
               </div>
-              <h3 className="member-name">{member.name}</h3>
-              <p className="member-role">{member.role}</p>
-              <p className="member-bio">{member.bio}</p>
-              <a
-                href={`https://instagram.com/${member.instagram.replace('@', '')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="member-social"
-              >
-                {member.instagram}
-              </a>
+              <div className="member-text-content">
+                <h3 className="member-name">{member.name}</h3>
+                <p className="member-role">{member.role}</p>
+                <p className="member-bio">{member.bio}</p>
+                <a
+                  href={`https://instagram.com/${member.instagram.replace('@', '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="member-social"
+                >
+                  {member.instagram}
+                </a>
+              </div>
             </motion.div>
           ))}
         </div>
