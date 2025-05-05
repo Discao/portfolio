@@ -2,16 +2,24 @@
   "team": [
     {
       "image": "/imagens/jean-img.jpg",
-      "name": "Jean",
+      "name": "Jean Cedemachi",
       "role": "Diretor de Arte",
-      "bio": "Lorem ipsum dolor sit amet",
+      "bio":[ 
+     "São nove anos trabalhando com Design, uma carreira que começou com um longo período de aprendizado na base operacional num formato quase que em linha de produção, passei por diversas áreas dentro do Design, olhando minha trajetória profissional numa espécie de zoom out da  optei por carregar uma abordagem multidisciplinar, que acho que condiz com minha personalidade e o que proponho no meu trabalho.",
+    "\n \n Caçar, procurar, buscar soluções para as ideias que quero materializar, é meu modo de trabalho. Correr atrás pra saber qual meio eu posso traduzir e tornar real da melhor forma, sempre me movimentando dentro das infinitas opções que eu conheça ou ainda vou conhecer.",
+    "\n \n A Dedo na Quina surge de nós juntarmos nossa inquietação com a vontade de experimentação e criação."
+    ],
       "instagram": "@cedemachi"
     },
     {
       "image": "/imagens/luty-img.jpg",
-      "name": "Luty",
+      "name": "Luiz Miguel 'Luty'",
       "role": "Diretor de Arte",
-      "bio": "Lorem ipsum dolor sit amet",
+      "bio": [
+        "Sou designer, artista gráfico, basqueteiro e baixista, residente em Maringá. Em cada segmento artístico que exploro, busco combinar técnicas e processos para encontrar soluções visuais criativas. Essa capacidade de combinação é uma das características que levo para todos os meus projetos.",
+        "\n \n Atuando há mais de 9 anos no mercado criativo, passei por diversas agências sediadas em Maringá, atendendo inúmeros clientes de diferentes nichos.",
+        "\n \n Hoje, com o Dedo Na Quina, formo uma parceria com Jean Cedemachi. Além de dividirmos projetos, também dividimos os palcos com nossa banda. O Dedo Na Quina funciona como um laboratório de experimentações, unindo versatilidade de projetos, técnicas e combinações para alcançar resultados que façam sentido tanto para o cliente quanto para o mercado."
+      ],
       "instagram": "@chocoluty"
     }
   ]

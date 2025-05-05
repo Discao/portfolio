@@ -7,13 +7,18 @@
         "category": "Branding",
         "client": "Crema Clothing",
         "year": "2024",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "A Crema é uma marca de roupas de streetwear que tem como conceito a celebração da individualidade, liberdade e autenticidade. Reflete a ideia de que cada pessoa é única, com seus próprios valores, sonhos e escolhas de vida.",
         "images": [
-          "/imagens/Crema.jpg",
-          "/imagens/Crema.jpg",
-          "/imagens/Crema.jpg",
-          "/imagens/Crema.jpg",
-          "/imagens/Crema.jpg"
+          "/imagens/crema-img-02.jpg",
+          "/imagens/crema-hover.jpg",
+          "/imagens/crema-img-04.jpg",
+          "/imagens/crema-img-03.jpg",
+          "/imagens/crema-img-07.jpg",
+          "/imagens/crema-img-08.jpg",
+          "/imagens/crema-img-00.jpg",
+          "/imagens/crema-img-05.jpg",
+          "/imagens/crema-img-06.jpg",
+          "/imagens/crema-img-01.jpg"
         ]
       },
 
@@ -24,13 +29,17 @@
         "category": "Branding",
         "client": "Gabriel Maricatto",
         "year": "2024",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "Marca pessoal criada para o advogado e consulto jurídico, Gabriel Maricatto",
         "images": [
-          "/imagens/Maricatto.jpg",
-          "/imagens/Maricatto.jpg",
-          "/imagens/Maricatto.jpg",
-          "/imagens/Maricatto.jpg",
-          "/imagens/Maricatto.jpg"
+          "/imagens/maricatto-img-000.jpg",
+          "/imagens/maricatto-img-001.jpg",
+          "/imagens/maricatto-img-002.jpg",
+          "/imagens/maricatto-img-003.jpg",
+          "/imagens/maricatto-img-004.jpg",
+          "/imagens/maricatto-img-005.jpg",
+          "/imagens/maricatto-img-006.jpg",
+          "/imagens/maricatto-img-007.jpg",
+          "/imagens/maricatto-img-008.jpg"
         ]
       },
       {
@@ -40,12 +49,17 @@
         "category": "Branding",
         "client": "iuca arquitetura",
         "year": "2023",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "A iuca é uma empresa de arquitetura e construção que tem como objetivo projetos que contam histórias únicas.",
         "images": [
-          "/imagens/IUCA.jpg",
-          "/imagens/IUCA.jpg",
-          "/imagens/IUCA.jpg",
-          "/imagens/IUCA.jpg"
+          "/imagens/iuca-img-00.jpg",
+          "/imagens/iuca-img-001.jpg",
+          "/imagens/iuca-img-002.jpg",
+          "/imagens/iuca-img-003.jpg",
+          "/imagens/iuca-img-004.jpg",
+          "/imagens/iuca-img-005.jpg",
+          "/imagens/iuca-img-006.jpg",
+          "/imagens/iuca-img-007.jpg",
+          "/imagens/iuca-img-008.jpg"
         ]
       },
       {
@@ -55,13 +69,68 @@
         "category": "Branding",
         "client": "Bambusa",
         "year": "2023",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "A Bambusa é uma empresa de instalações artísticas e ecológicas feitas com bambu.",
         "images": [
-          "/imagens/Bambusa.jpg",
-          "/imagens/Bambusa.jpg",
-          "/imagens/Bambusa.jpg",
-          "/imagens/Bambusa.jpg",
-          "/imagens/Bambusa.jpg"
+          "/imagens/bambusa-img-00.jpg",
+          "/imagens/bambusa-img-01.jpg",
+          "/imagens/bambusa-img-02.jpg",
+          "/imagens/bambusa-img-03.jpg",
+          "/imagens/bambusa-img-04.jpg"
+        ]
+       },  
+       {
+        "image": "/imagens/JazzSabor.jpg",
+        "hoverImage": "./imagens/Jazzsabor-hover.jpg",
+        "name": "Jazz & Sabor",
+        "category": "Graphic Design",
+        "client": "Mercadão Fratello",
+        "year": "2025",
+        "description": "Direção de arte desenvolvida para um evento de Jazz realizado no Mercadão Fratello em Maringá-PR.",
+        "images": [
+          "/imagens/JazzSabor.jpg",
+          "/imagens/Jazzsabor-hover.jpg",
+          "/imagens/jazz-img-01.jpg",
+          "/imagens/jazz-img-02.jpg",
+          "/imagens/jazz-img-03.jpg",
+          "/imagens/jazz-img-04.jpg",
+          "/imagens/jazz-img-05.jpg",
+          "/imagens/jazz-img-06.jpg",
+          "/imagens/jazz-img-07.jpg"
+        ]
+       },
+       {
+        "image": "/imagens/desculpa.jpg",
+        "hoverImage": "./imagens/desculpa-hover.jpg",
+        "name": "Desculpa Por Ter Vindo",
+        "category": "Graphic Design",
+        "client": "Fusage",
+        "year": "2023",
+        "description": "Identidade Visual feita para uma turnê da Banda Fusage.",
+        "images": [
+          "/imagens/desculpa.jpg",
+          "/imagens/desculpa-hover.jpg",
+          "/imagens/desculpa-img-001.jpg",
+          "/imagens/desculpa-img-002.jpg",
+          "/imagens/desculpa-img-003.jpg",
+          "/imagens/desculpa-img-004.jpg",
+          "/imagens/desculpa-img-005.jpg",
+          "/imagens/desculpa-img-006.jpg"
+        ]
+       },
+
+       {
+        "image": "/imagens/otburst.jpg",
+        "hoverImage": "./imagens/outburst-hover.jpg",
+        "name": "Outburst Tour",
+        "category": "Graphic Design",
+        "client": "Fusage",
+        "year": "2022",
+        "description": "Identidade Visual feita para uma turnê da Banda Fusage.",
+        "images": [
+          "/imagens/otburst.jpg",
+          "/imagens/outburst-hover.jpg",
+          "/imagens/outburst-img-001.jpg",
+          "/imagens/outburst-img-002.jpg"
         ]
        }
     ],
