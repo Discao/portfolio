@@ -18,8 +18,12 @@ body {
 
 a {
     cursor: url("https://i.imgur.com/pJQe7m7.png")16 16, pointer;
+    text-decoration: none;
+    color: inherit; /* Keeps your existing text color */
+
 }
 
 button:hover, a:hover, .botao:hover {
     cursor: url("https://i.imgur.com/pJQe7m7.png")16 16, pointer;
+    text-decoration: none; /* Optional: removes underline on hover too */
 }
