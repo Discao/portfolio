@@ -1,4 +1,4 @@
-/* Global Styles */
+
 h1 {
   font-size: 1rem;
   font-weight: 200;
@@ -25,24 +25,24 @@ h3 {
   color: rgb(255, 193, 32);
 }
 
-/* Projects Container */
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between project containers */
-  flex: 1; /* Fill remaining space */
-  overflow-y: auto; /* Allow scrolling if content overflows */
+  gap: 20px; 
+  flex: 1; 
+  overflow-y: auto; 
   justify-content: space-between;
   overflow: visible;
 }
 
-/* Project Container */
+
 .container {
-  width: calc(50% - 10px); /* Two columns with gap */
+  width: calc(50% - 10px); 
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative; /* Required for absolute positioning of hover image */
+  position: relative; 
 }
 
 .container:hover {
@@ -56,7 +56,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  position: relative; /* Ensure the info container is relative for absolute positioning */
+  position: relative; 
 }
 
 /* Default Image */
@@ -64,7 +64,7 @@ h3 {
   width: 100%;
   object-fit: cover;
   border-radius: 0.3rem;
-  transition: opacity 0.5s ease; /* Smooth transition for image change */
+  transition: opacity 0.5s ease; 
 }
 
 /* Hover Image */
@@ -75,28 +75,28 @@ h3 {
   width: 100%;
   object-fit: cover;
   border-radius: 0.3rem;
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.5s ease; /* Smooth transition for image change */
-  z-index: 1; /* Ensure the hover image is above the default image */
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+  z-index: 1; 
 }
 
 .container:hover .hover-image {
-  opacity: 1; /* Show hover image on hover */
+  opacity: 1; 
 }
 
 .container:hover .default-image {
-  opacity: 0; /* Hide default image on hover */
+  opacity: 0; 
 }
 
-/* Text Row in Container */
+
 .text-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding-top: 10px;
-  position: relative; /* Ensure text is positioned correctly */
-  z-index: 2; /* Ensure text is above the hover image */
+  position: relative; 
+  z-index: 2; 
 }
 
 .name {
@@ -113,7 +113,6 @@ h3 {
 .project-details-container {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 120px); /* Adjust height to account for header and footer */
   padding: 0px;
 }
 
@@ -145,11 +144,13 @@ h3 {
 
 /* Right Side: Scrollable Images */
 .project-images {
-  width: 100%; /* Width for the images section */
+  width: 100%; 
   box-sizing: border-box;
   overflow-y: auto; /* Allow scrolling for images */
   transition: all 0.9s ease;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-images img {
@@ -158,19 +159,16 @@ h3 {
   height: auto;
 }
 
-/* Responsiveness */
 @media (max-width: 767px) {
-  /* Mobile: One container per row */
   .container {
-    width: 100%; /* Full width on mobile */
-    height: auto; /* Adjust height automatically */
+    width: 100%; 
+    height: auto; 
   }
 
   img {
-    height: auto; /* Adjust image height automatically */
+    height: auto; 
   }
 
-  /* Optional: Adjust header for mobile */
   .header-content {
     flex-direction: column;
     align-items: flex-start;
@@ -185,7 +183,6 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  /* Tablet: Two containers per row */
   .container {
     width: calc(50% - 20px);
     height: 50vh;
@@ -195,36 +192,35 @@ h3 {
     height: calc(50vh - 60px);
   }
 
-  /* For tablets and larger screens */
   .project-details-container {
-    flex-direction: row; /* Side-by-side layout */
+    flex-direction: row; 
   }
 
   .project-info {
-    width: 30%; /* Fixed width for the text section */
-    position: fixed; /* Lock the text section in place */
+    width: 30%; 
+    position: fixed; 
     left: 0;
-    top: 80px; /* Adjust based on header height */
-    bottom: 60px; /* Adjust based on footer height */
-    overflow-y: auto; /* Allow scrolling if content overflows */
+    top: 80px; 
+    bottom: 60px; 
+    overflow-y: auto; 
   }
 
   .project-images {
-    width: 70%; /* Width for the images section */
-    margin-left: 30%; /* Push images to the right of the text section */
+    width: 70%; 
+    margin-left: 30%; 
   }
 }
 
-/* Cascade Animation */
+
 .cascade-item {
-  opacity: 0; /* Start with elements hidden */
+  opacity: 0; 
 }
 
-/* Define the fade-in animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px); /* Optional: Add a slight upward movement */
+    transform: translateY(20px); 
   }
   to {
     opacity: 1;
@@ -232,7 +228,7 @@ h3 {
   }
 }
 
-/* Apply the animation to all pages */
+
 .page-enter {
   animation: fadeIn 0.9s ease-in-out;
 }
